@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+
+
+{% block content %}
+<p>
+
+    <div class="row">
+        <div class="col-lg-6">
+            <img class="img-fluid" src="http://placehold.it/700x400" alt="">
+        </div>
+        <div class="col-lg-6">
+            <h1 class="mt-4">{{ producto.nombre }}</h1>
+            <h4>Precio: {{ producto.precio }}</h4>
+            <p>Categoría: {{ producto.categoria.nombre }}</p>
+            <div class="card-footer">
+                <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+            </div>
+        </div>
+    </div>
+{% endblock %}
